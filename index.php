@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Firebase | PHP Cloud Messaging</title>
+        <title>EazyCampus | Firebase Cloud Messaging</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="//www.gstatic.com/mobilesdk/160503_mobilesdk/logo/favicon.ico">
@@ -63,8 +63,8 @@
 
         // optional payload
         // $payload = array();
-        // $payload['country'] = 'America';
-        // $payload['score'] = '2.6';
+        // $payload['team'] = 'India';
+        // $payload['score'] = '5.6';
 
         // notification API_KEY
         $API_KEY = isset($_GET['API_KEY']) ? $_GET['API_KEY'] : '';
@@ -117,7 +117,7 @@
         ?>
         <div class="container">
             <div class="fl_window">
-                <div><img src="img/firebase_logo.png" width="200" alt="Firebase"/></div>
+                <div><img src="https://api.androidhive.info/images/firebase_logo.png" width="200" alt="Firebase"/></div>
                 <br/>
                 <?php if ($json != '') { ?>
                     <label><b>Request:</b></label>
@@ -134,6 +134,28 @@
                 <?php } ?>
 
             </div>
+
+            <!-- <form class="pure-form pure-form-stacked" method="get">
+                <fieldset>
+                    <legend>Send to Single Device</legend>
+
+                    <label for="redId">Firebase Reg Id</label>
+                    <input type="text" id="redId" name="regId" class="pure-input-1-2" placeholder="Enter firebase registration id">
+
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" class="pure-input-1-2" placeholder="Enter title">
+
+                    <label for="message">Message</label>
+                    <textarea class="pure-input-1-2" rows="5" name="message" id="message" placeholder="Notification message!"></textarea>
+
+                    <label for="include_image" class="pure-checkbox">
+                        <input name="include_image" id="include_image" type="checkbox"> Include image
+                    </label>
+                    <input type="hidden" name="push_type" value="individual"/>
+                    <button type="submit" class="pure-button pure-button-primary btn_send">Send</button>
+                </fieldset>
+            </form>
+            <br/><br/><br/><br/> -->
 
             <form class="pure-form pure-form-stacked" method="get">
                 <fieldset>

@@ -1,7 +1,13 @@
 <?php
 
+/**
+ * @author Ravi Tamada
+ * @link URL Tutorial link
+ */
 class Push {
 
+    // push message title
+    // private $API_KEY;
     private $topic;
     private $title;
     private $message;
@@ -16,6 +22,7 @@ class Push {
     private $is_background;
 
     function __construct() {
+
     }
 
     public function setTopic($topic) {
@@ -62,5 +69,11 @@ class Push {
         $res['data']['timestamp'] = date('Y-m-d G:i:s');
         return $res;
     }
+
+    // public function getAPIFunctionKey() {
+    //     $res = array();
+    //     $res['data']['API_KEY'] = $this->API_KEY;
+    //     return $res;
+    // }
 
 }
